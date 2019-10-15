@@ -22,7 +22,7 @@ exports.internalIP = function () {
           }
         });
       });
-    } catch {
+    } catch (error) {
       return reject(error.message || error);
     }
   })
