@@ -1,6 +1,6 @@
 {
   "name": "net-ip",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Query local and public IP address",
   "main": "index.js",
   "scripts": {
