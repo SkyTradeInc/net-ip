@@ -8,7 +8,6 @@ exports.publicIP = function() {
       resolve(String(execSync('curl -s https://api.ipify.org')))
     } catch(error) {
       return reject(error.message || error);
-      fallBackMethod();
     }
   })
 }
@@ -25,7 +24,6 @@ exports.internalIP = function () {
       });
     } catch {
       return reject(error.message || error);
-      fallBackMethod();
     }
   })
 }
@@ -36,7 +34,6 @@ exports.hostName = function() {
       resolve(os.hostname());
     } catch (error) {
       return reject(error.message || error);
-      fallBackMethod();
     }
   })
 }
